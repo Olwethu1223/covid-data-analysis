@@ -1,65 +1,100 @@
 # covid-data-analysis
-# COVID-19 Global Data Tracker
+# 🦠 COVID-19 Global Data Tracker
 
-This project analyzes COVID-19 global data to explore trends in cases, deaths, and vaccinations across selected countries over time. The analysis is conducted using Python and various data analysis libraries, with visualizations to effectively communicate findings.
+## 📘 Project Overview
 
-## 📁 Project Structure
+This project provides a global overview of the COVID-19 pandemic using data from **Our World In Data**. It focuses on analyzing and visualizing key metrics such as total cases, deaths, new infections, and vaccination progress across various countries over time.
 
-- **owid-covid-data.csv**: COVID-19 dataset sourced from [Our World in Data](https://ourworldindata.org/coronavirus-source-data).
-- **eda.py**: Script for data loading, cleaning, and exploratory data analysis (EDA).
-- **analysis_outputs/plots**: Directory where all generated visualizations are saved.
-- **covid_analysis.ipynb**: Jupyter Notebook with data exploration, visualizations, and key insights.
+This data analysis project was developed as part of a data analysis assignment using Python and Jupyter Notebook. It uses tools like `pandas`, `matplotlib`, `seaborn`, and `plotly` for data wrangling and visualization.
 
-## ✅ Project Objectives
+---
 
-- Import and clean COVID-19 data
-- Analyze time trends for cases, deaths, and vaccinations
-- Compare metrics across selected countries (Kenya, USA, India)
-- Visualize trends with charts
-- Summarize findings in a Jupyter Notebook
+## 📁 Dataset Used
 
-## 📦 Dependencies
+- Source: [Our World in Data – COVID-19 Dataset](https://github.com/owid/covid-19-data/tree/master/public/data)
+- File: `owid-covid-data.csv`
 
+---
+
+## 🛠 How to Run This Project
+
+### Requirements:
+Make sure you have the following installed:
 - Python 3.x
-- pandas
-- matplotlib
-- os
+- Jupyter Notebook or JupyterLab
+- Required libraries:
+  ```bash
+  pip install pandas matplotlib seaborn plotly
+  ```
 
-Install the required libraries using:
+### Steps:
+1. Download the dataset `owid-covid-data.csv` and place it in the same folder as your notebook.
+2. Open the notebook `covid19_data_tracker.ipynb` in Jupyter.
+3. Run the cells step by step.
+4. Explore the charts and summary insights.
+5. Optionally, export the notebook as a PDF for submission or presentation.
 
-```bash
-pip install pandas matplotlib
-```
+---
 
-## 🚀 How to Run the Project
+## 📊 Key Features & Analysis Steps
 
-1. Clone the repository or download the files.
-2. Ensure that the `owid-covid-data.csv` file is in the same directory as `eda.py`.
-3. Open a terminal and navigate to the project directory.
+### ✅ Step 1: Data Collection
+- Downloaded the cleaned COVID-19 global dataset from **Our World in Data**.
 
-Run the analysis script:
+### ✅ Step 2: Data Loading & Exploration
+- Loaded the dataset using `pandas`.
+- Explored the dataset’s structure and missing values.
 
-```bash
-python eda.py
-```
+### ✅ Step 3: Data Cleaning
+- Filtered and selected countries of interest.
+- Converted date fields and handled missing data.
 
-4. View the generated plots in the `analysis_outputs/plots` directory.
+### ✅ Step 4: Exploratory Data Analysis (EDA)
+- Tracked and compared total cases, deaths, and new daily cases.
+- Calculated death rates.
+- Created visual comparisons between countries.
 
-## 📊 Data Analysis and Visualizations
+### ✅ Step 5: Visualizing Vaccination Progress
+- Analyzed the number of people vaccinated and fully vaccinated.
+- Visualized vaccine rollouts across countries.
 
-- Total cases and deaths over time for each country
-- New daily cases comparison
-- Vaccination progress over time
+### ✅ Step 6: Choropleth Map
+- Used Plotly to create an interactive world map of total COVID-19 cases.
+- Visualized the global spread with color-coded intensity.
 
-All visualizations are saved in the `analysis_outputs/plots` folder.
+### ✅ Step 7: Insights & Reporting
+#### Key Insights:
+1. **USA and India** had the highest total reported cases.
+2. **Kenya** and **South Africa** had lower death rates compared to some Western countries.
+3. **Vaccination rates** were highest in wealthier nations, while many developing countries lagged behind.
+4. **Vaccination rollouts** accelerated significantly in 2021.
+5. **Daily new cases** showed waves of infection at different times across regions.
 
-## ✨ Insights
+---
 
-- Key observations and insights are documented in the Jupyter Notebook (`covid_analysis.ipynb`).
-- Markdown cells in the notebook provide detailed explanations of the analysis steps and findings.
+## 📌 Tools & Libraries
 
-## 🛠️ Future Enhancements
+- `pandas`: Data manipulation
+- `matplotlib` & `seaborn`: Data visualization
+- `plotly.express`: Interactive world map
+- `Jupyter Notebook`: Development environment
 
-- Integrate interactive visualizations using Plotly or Seaborn.
-- Expand the dataset to include additional countries.
-- Implement a map visualization to track global case density.
+---
+
+## 📥 Output
+
+The final notebook contains:
+- Cleaned data
+- Graphs and maps
+- Written summaries and insights in Markdown
+- Option to export as PDF
+
+---
+
+## 👤 Author
+
+Amahle Mathebula – *Data Analysis / Python Learner*  
+
+
+
+
